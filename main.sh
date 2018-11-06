@@ -15,7 +15,7 @@ echo "\033[0;31m""Author : ""\033[1;34m""VrozAnims2003"
 sleep 1
 echo "\033[0;31m""Team : ""\033[1;33m""United guilds of Cyber Arts"
 sleep 1
-echo "\033[0;31m""Version : ""\033[1;37m""1.0"
+echo "\033[0;31m""Version : ""\033[1;37m""1.0 (Build 2)"
 sleep 2
 echo ""
 echo ""

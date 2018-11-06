@@ -23,9 +23,9 @@ if not, follow this:
 ```
 $ git clone https://github.com/SoULz13BLACK/HackerzIPBackup
 ```
-4.create folder 'export_ip', 'db', and 'xml_data':
+4.create folder 'xml_data':
 ```
-$ mkdir export_ip db xml_data
+$ mkdir xml_data
 ```
 \
 How to run it:\
@@ -57,7 +57,7 @@ $ sh main.sh
 ```
 8.Choose number 2 for Backup IP(s)
 
-9.wait, if show message: try backup again and show error: no such table: IPLIST,choose number 2 again in main menu (i will fix this bug soon)
+9.wait for moment..
 
 10.then, if success, choose number 3 to export IP(s).
 

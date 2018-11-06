@@ -22,6 +22,8 @@ def main_process():
 		data_data = { usernamea : [ip_addressa, id_hackerz]}
 		dat_ipa.update(data_data)
 
+	user12 = list(dat_ipa.keys())
+
 	for child in root:
 		if child.tag == "string":
 			if child.attrib["name"] == "ip_history":
@@ -35,7 +37,7 @@ def main_process():
 		ip_address= data_iplist[host[i]]['ip']
 		tut = 0
 
-		if username in dat_ipa:
+		if username in user12:
 			if ip_address == dat_ipa[username][0]:
 				tut = True
 			elif ip_address != dat_ipa[username][0]:
@@ -65,7 +67,7 @@ except Exception as e:
 	if str(e) == "no such table: IPLIST":
 		ipl.execute("CREATE TABLE 'IPLIST' ('ID' INTEGER, 'USERNAME' TEXT, 'IP_ADDRESS' TEXT, PRIMARY KEY('ID'));")
 		db.commit()
-		main_process
+		main_process()
 
 	elif str(e) != "no such table: IPLIST":
 		print(msg+problem)
